@@ -1,0 +1,68 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="tertiary">
+    <ion-title>
+      Praias
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-list>
+    <ion-list-header>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/d1/1f/70/20-semfiltro.jpg">
+          </ion-thumbnail>
+          <ion-label>
+            <ion-text color="primary">
+              <h2>Praia dos Padres</h2>
+            </ion-text>
+            <p>Guarapari</p>
+          </ion-label>
+          <ion-note slot="end">Sul</ion-note>
+        </ion-item>
+
+        <ion-item-options>
+          <ion-item-option (click)="openSiteObj1()" color="danger">
+            <ion-icon slot="icon-only" name="Information-circle-outline"></ion-icon>
+          </ion-item-option>
+          <ion-item-option (click)="like()">
+            <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list-header>
+
+
+    <ion-list-header>
+      <ion-item-sliding>
+        <ion-item>
+          <ion-thumbnail slot="start">
+            <img src="https://i.pinimg.com/736x/a6/98/41/a69841d1387711e4e14b721056ce3464.jpg">
+          </ion-thumbnail>
+          <ion-label>
+            <ion-text color="primary">
+              <h2>Praia Três Praias</h2>
+            </ion-text>
+            <p>Guarapari</p>
+          </ion-label>
+          <ion-note slot="end">Sul</ion-note>
+        </ion-item>
+
+        <ion-item-options>
+          <ion-item-option (click)="openSiteObj2()" color="danger">
+            <ion-icon slot="icon-only" name="Information-circle-outline"></ion-icon>
+          </ion-item-option>
+          <ion-item-option (click)="like()">
+            <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+          </ion-item-option>
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list-header>
+
+
+  </ion-list>
+
+</ion-content>
